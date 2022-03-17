@@ -3,20 +3,23 @@
     'name': "bloquetas",
 
     'summary': """
-        Short (1 phrase/line) summary of the module's purpose, used as
-        subtitle on modules listing or apps.openerp.com""",
+        Este modulo nos proporciona informacion importante sobre las
+        propiedades de las bloquetas de ronaldinhoTEC""",
 
     'description': """
-        Long description of module's purpose
+        Este modulo nos proporciona informacion importante sobre las
+        propiedades de las bloquetas de ronaldinhoTEC, ademas de una funcion
+        informativa que nos permite calcular el peso de una bloqueta 
+        en base a su tamaño y su material.
     """,
 
-    'author': "My Company",
-    'website': "http://www.yourcompany.com",
+    'author': "RonaldinhoTEC",
+    'website': "https://ronaldinhotec.github.io/mi-portafolio/",
 
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/15.0/odoo/addons/base/data/ir_module_category_data.xml
     # for the full list
-    'category': 'Uncategorized',
+    'category': 'mis_modulos',
     'version': '0.1',
 
     # any module necessary for this one to work correctly
@@ -30,6 +33,6 @@
     ],
     # only loaded in demonstration mode
     'demo': [
-        'demo/demo.xml',
+        # 'demo/demo.xml',
     ],
 }
