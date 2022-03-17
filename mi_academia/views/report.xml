@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <report
+            id="report_custom"
+            model="sale.order"
+            string="Reporte personalizado"
+            report_type="qweb-pdf"
+            name="mi_academia.report_custom_template"
+        />
+        <template id="report_custom_template" name="template_name">
+            <t t-call="web.html_container">
+                <t t-call="web.external_layout">
+                    <div class="header">
+                        RonaldinhoTEC / logo
+                    </div> 
+                    <div class="page">
+                        <h6 class="border-bottom border-info">Reporte semanal de presupuestos admitidos</h6>
+                        <div style="width: 300px;
+                                    height: 300px;
+                                    border: 1px solid green;">
+                            <div style="border: 1px solid red">Carreras</div>
+                            <div style="border: 1px solid gold">Colores</div>
+                            <div style="border: 1px solid black">Branchs</div>
+                            <div style="border: 1px solid blue">Lugares</div>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <small>reporte aprovado por las mas altas autoridades.</small>
+                    </div>   
+                </t>
+            </t>
+
+        </template>
+    </data>
+</odoo>

@@ -1,0 +1,42 @@
+<odoo>
+  <data>
+
+    <!-- <t t-set="numero" t-value="5+5"/>
+    <t t-esc="numero"/>
+    <t t-raw="numero"/>
+    <t t-field="odoo.numero"></t>
+
+    <t t-if="numero == 1">
+      <p>El valor es 1</p>      
+    </t>
+    <t t-elif="numero == 2">
+      <p>El valor es 2</p>
+    </t>
+    <t t-else="">
+      <p>El valor es mayor a 2</p>
+    </t> -->
+
+    <!-- BUCLES -->
+    <!-- <t t-foreach="[1,2,3,4]" t-as="i">
+      <p t-esc="i"></p>
+    </t> -->
+    <!-- <t t-set="value" t-value="15"/>
+    <t t-set="value2" t-value="14"/>
+    <t t-js="odoo">
+      console.log('Valor',odoo.value2);
+    </t> -->
+    <record id="moldeo_custom_footer" model="ir.ui.view">
+      <field name="name">moldeo.footer</field>
+      <field name="inherit_id" ref="website.footer_custom" />
+      <field name="arch" type="xml">
+        <xpath expr="//div[@id='footer']" position="replace">
+          <div style="width: 100vw; height: 300px; background-color: green; display: flex; justify-content: space-around; ">
+            <span>Soy ronaldinho jsjs</span>
+            <span>derechos reservados</span>
+          </div>
+        </xpath>
+      </field>
+    </record>
+
+  </data>
+</odoo>
