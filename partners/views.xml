@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_tree_partner" model="ir.ui.view">
+        <field name="name">view.tree.partner</field>
+        <field name="model">wb.partner</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="debt_collector"/>
+                <field name="seller"/>
+            </tree>
+        </field>
+    </record>
+    <record id="view_form_partner" model="ir.ui.view">
+        <field name="name">view.form.partner</field>
+        <field name="model">wb.partner</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="debt_collector" string="Cobrador"/>
+                        <field name="seller" string="Vendedor"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_view_partner" model="ir.actions.act_window">
+        <field name="name">Socios</field>
+        <field name="res_model">wb.partner</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    
+    <menuitem 
+        id="menu_partner"
+        parent=""
+        action="partners.action_view_partner"/>
+        
+        <!-- View search -->
+        <record id="demo_test_search" model="ir.ui.view">
+            <field name="name">Demo Test search</field>
+            <field name="model">wb.partner</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="debt_collector"/>
+                    <field name="seller"/>
+                    <filter string="cobradores con 'r'" name="debt_collector" domain="[('debt_collector','=','r')]"/> 
+                    <filter string="vendedores con 'r'" name="seller" domain="[('seller','=','r')]"/> 
+                </search> 
+            </field>
+        </record>
+</odoo>
