@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+<!--
+    <record model="ir.ui.view" id="bloquetas.list">
+      <field name="name">bloquetas list</field>
+      <field name="model">bloquetas.bloquetas</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+-->
+
+    <!-- actions opening views on models -->
+<!--
+    <record model="ir.actions.act_window" id="bloquetas.action_window">
+      <field name="name">bloquetas window</field>
+      <field name="res_model">bloquetas.bloquetas</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+-->
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="bloquetas.action_server">
+      <field name="name">bloquetas server</field>
+      <field name="model_id" ref="model_bloquetas_bloquetas"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="bloquetas" id="bloquetas.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="bloquetas.menu_1" parent="bloquetas.menu_root"/>
+    <menuitem name="Menu 2" id="bloquetas.menu_2" parent="bloquetas.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="bloquetas.menu_1_list" parent="bloquetas.menu_1"
+              action="bloquetas.action_window"/>
+    <menuitem name="Server to list" id="bloquetas" parent="bloquetas.menu_2"
+              action="bloquetas.action_server"/>
+-->
+  </data>
+</odoo>
