@@ -5,5 +5,5 @@
         'views.xml',
         'security.xml'
     ],
-    "category": "mis_modulos",
+    "category": "rTEC_modulos",
 }
