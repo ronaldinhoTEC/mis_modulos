@@ -1,6 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <!-- explicit list view definition -->
-
     <record model="ir.ui.view" id="view_tree_propiedades">
       <field name="name">view_tree_propiedades</field>
       <field name="model">bloquetas.propiedades</field>
@@ -65,16 +64,4 @@
 
     <menuitem id="menu_propiedades" action="bloquetas.action_view_propiedades"/>
 
-    <!-- menu categories -->
-<!--
-    <menuitem name="Menu 1" id="bloquetas.menu_1" parent="bloquetas.menu_root"/>
-    <menuitem name="Menu 2" id="bloquetas.menu_2" parent="bloquetas.menu_root"/>
--->
-    <!-- actions -->
-<!--
-    <menuitem name="List" id="bloquetas.menu_1_list" parent="bloquetas.menu_1"
-              action="bloquetas.action_window"/>
-    <menuitem name="Server to list" id="bloquetas" parent="bloquetas.menu_2"
-              action="bloquetas.action_server"/>
--->
 </odoo>
