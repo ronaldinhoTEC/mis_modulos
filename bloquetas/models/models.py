@@ -5,7 +5,6 @@ from odoo import models, fields, api
 
 class Propiedades(models.Model):
     _name = 'bloquetas.propiedades'
-    _description = 'bloquetas.propiedades'
 
     nombre = fields.Char(string="Nombre:", required=True)
     medidas = fields.Char(string="Medidas:", required=True)
