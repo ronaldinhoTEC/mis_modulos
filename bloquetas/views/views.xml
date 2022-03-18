@@ -21,12 +21,16 @@
     <field name="arch" type="xml">
       <form>
         <sheet>
-          <field name="nombre" string="Tu nombre"/>
-          <field name="medidas" string="Tu medida"/>
-          <field name="cantidad" string="Tu cantidad"/>
-          <field name="presupuesto" string="Tu presupuesto"/>
-          <field name="tipo" string="Tu tipo"/>
-          <field name="fecha" string="Tu fecha"/>
+          <group name="grupo 1" string="grupo 11">
+            <field name="nombre" string="Tu nombre"/>
+            <field name="medidas" string="Tu medida"/>
+            <field name="cantidad" string="Tu cantidad"/>
+          </group>
+          <group name="grupo2" string="grupo 22">
+            <field name="presupuesto" string="Tu presupuesto"/>
+            <field name="tipo" string="Tu tipo"/>
+            <field name="fecha" string="Tu fecha"/>
+          </group>
         </sheet>
       </form>
     </field>
