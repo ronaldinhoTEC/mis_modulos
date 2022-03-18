@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "Propiedades bloqueta",
+    'name':"Propiedades bloqueta",
 
     'summary': """
         Este modulo nos proporciona informacion importante sobre las
