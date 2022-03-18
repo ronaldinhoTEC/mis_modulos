@@ -18,7 +18,7 @@
   <record id="view_form_propiedades" model="ir.ui.view">
     <field name="name">view_form_propiedades</field>
     <field name="model">bloquetas.propiedades</field>
-    <field name="arch" type="xml"/>
+    <field name="arch" type="xml">
       <form>
         <sheet>
           <field name="nombre" string="Tu nombre"/>
@@ -29,6 +29,7 @@
           <field name="fecha" string="Tu fecha"/>
         </sheet>
       </form>
+    </field>
   </record>
 
   <record id="action_view_propiedades" model="ir.actions.act_window" >
