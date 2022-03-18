@@ -1,46 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <record model="ir.ui.view" id="view_tree_propiedades">
-      <field name="name">view_tree_propiedades</field>
-      <field name="model">bloquetas.propiedades</field>
-      <field name="arch" type="xml">
-        <tree>
-          <field name="nombre"/>
-          <field name="medidas"/>
-          <field name="cantidad"/>
-          <field name="presupuesto"/>
-          <field name="tipo"/>
-          <field name="fecha"/>
-        </tree>
-      </field>
+        <field name="name">view_tree_propiedades</field>
+        <field name="model">bloquetas.propiedades</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="nombre"/>
+                <field name="medidas"/>
+                <field name="cantidad"/>
+                <field name="presupuesto"/>
+                <field name="tipo"/>
+                <field name="fecha"/>
+            </tree>
+        </field>
     </record>
     <record id="view_form_propiedades" model="ir.ui.view">
       <field name="name">view_form_propiedades</field>
       <field name="model">bloquetas.propiedades</field>
       <field name="arch" type="xml"/>
-        <form>
-          <sheet>
-            <group name="grupo 1" string="Grupo 1">
-              <field name="nombre" string="Tu nombre"/>
-              <field name="medidas" string="Tu medida"/>
-              <field name="cantidad" string="Tu cantidad"/>
-            </group>
-            <group name="grupo 2" string="Grupo 2">
-              <field name="presupuesto" string="Tu presupuesto"/>
-              <field name="tipo" string="Tu tipo"/>
-              <field name="fecha" string="Tu fecha"/>
-            </group>
-          </sheet>
-        </form>
+          <form>
+              <sheet>
+                  <group name="grupo 1" string="Grupo 1">
+                      <field name="nombre" string="Tu nombre"/>
+                      <field name="medidas" string="Tu medida"/>
+                      <field name="cantidad" string="Tu cantidad"/>
+                  </group>
+                  <group name="grupo 2" string="Grupo 2">
+                      <field name="presupuesto" string="Tu presupuesto"/>
+                      <field name="tipo" string="Tu tipo"/>
+                      <field name="fecha" string="Tu fecha"/>
+                  </group>
+              </sheet>
+          </form>
     </record>
 
 
     <!-- actions opening views on models -->
 
     <record model="ir.actions.act_window" id="action_view_propiedades">
-      <field name="name">PROPIEDADES</field>
-      <field name="res_model">bloquetas.propiedades</field>
-      <field name="view_mode">tree,form</field>
+        <field name="name">PROPIEDADES</field>
+        <field name="res_model">bloquetas.propiedades</field>
+        <field name="view_mode">tree,form</field>
     </record>
 
 
