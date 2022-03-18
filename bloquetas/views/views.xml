@@ -1,28 +1,50 @@
 <odoo>
   <data>
     <!-- explicit list view definition -->
-<!--
-    <record model="ir.ui.view" id="bloquetas.list">
-      <field name="name">bloquetas list</field>
-      <field name="model">bloquetas.bloquetas</field>
+
+    <record model="ir.ui.view" id="view_tree_propiedades">
+      <field name="name">view_tree_propiedades</field>
+      <field name="model">bloquetas.propiedades</field>
       <field name="arch" type="xml">
         <tree>
-          <field name="name"/>
-          <field name="value"/>
-          <field name="value2"/>
+          <field name="nombre"/>
+          <field name="medidas"/>
+          <field name="cantidad"/>
+          <field name="presupuesto"/>
+          <field name="tipo"/>
+          <field name="fecha"/>
         </tree>
       </field>
     </record>
--->
+    <record id="view_form_propiedades" model="ir.ui.view">
+      <field name="name">view_form_propiedades</field>
+      <field name="model">bloquetas.propiedades</field>
+      <field name="arch" type="xml"/>
+        <form>
+          <sheet>
+            <group name="grupo 1" string="Grupo 1">
+              <field name="nombre" string="Tu nombre"/>
+              <field name="medidas" string="Tu medida"/>
+              <field name="cantidad" string="Tu cantidad"/>
+            </group>
+            <group name="grupo 2" string="Grupo 2">
+              <field name="presupuesto" string="Tu presupuesto"/>
+              <field name="tipo" string="Tu tipo"/>
+              <field name="fecha" string="Tu fecha"/>
+            </group>
+          </sheet>
+        </form>
+    </record>
+
 
     <!-- actions opening views on models -->
-<!--
-    <record model="ir.actions.act_window" id="bloquetas.action_window">
-      <field name="name">bloquetas window</field>
-      <field name="res_model">bloquetas.bloquetas</field>
+
+    <record model="ir.actions.act_window" id="action_view_propiedades">
+      <field name="name">PROPIEDADES</field>
+      <field name="res_model">bloquetas.propiedades</field>
       <field name="view_mode">tree,form</field>
     </record>
--->
+
 
     <!-- server action to the one above -->
 <!--
@@ -41,9 +63,9 @@
 -->
 
     <!-- Top menu item -->
-<!--
-    <menuitem name="bloquetas" id="bloquetas.menu_root"/>
--->
+
+    <menuitem id="menu_propiedades" action="bloquetas.action_view_propiedades"/>
+
     <!-- menu categories -->
 <!--
     <menuitem name="Menu 1" id="bloquetas.menu_1" parent="bloquetas.menu_root"/>

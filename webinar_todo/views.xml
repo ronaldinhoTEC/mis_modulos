@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_tree_todo" model="ir.ui.view">
+        <field name="name">view.tree.todo</field>
+        <field name="model">wb.todo</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="status"/>
+                <field name="owner"/>
+                <field name="title"/>
+                <field name="price"/>
+                <field name="country"/>
+            </tree>
+        </field>
+    </record>
+    <record id="view_form_todo" model="ir.ui.view">
+        <field name="name">view.form.todo</field>
+        <field name="model">wb.todo</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name" string="Descripción"/>
+                        <field name="status" string="Estado de la tarea"/>
+                        <field name="owner" string="Dueño"/>
+                    </group>
+                    <group>
+                        <field name="title" string="Titulo"/>
+                        <field name="price" string="Precio"/>
+                        <field name="country" string="Pais"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_view_todo" model="ir.actions.act_window">
+        <field name="name">Lista de tareas</field>
+        <field name="res_model">wb.todo</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    
+    <menuitem id="menu_todo" parent="" action="webinar_todo.action_view_todo"/>
+</odoo>
