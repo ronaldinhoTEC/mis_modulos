@@ -33,7 +33,7 @@
   </record>
 
   <record id="action_view_propiedades" model="ir.actions.act_window" >
-    <field name="name">propiedadees</field>
+    <field name="name">PROPIEDADES-</field>
     <field name="res_model">bloquetas.propiedades</field>
     <field name="view_mode">tree,form</field>
   </record>
