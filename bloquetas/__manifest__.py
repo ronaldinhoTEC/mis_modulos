@@ -31,9 +31,5 @@
         'views/views.xml',
         'views/templates.xml',
         'security/security.xml'
-    ],
-    # only loaded in demonstration mode
-    'demo': [
-        # 'demo/demo.xml',
-    ],
+    ]
 }

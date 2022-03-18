@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <record model="ir.ui.view" id="view_tree_propiedades">
+    <record id="view_tree_propiedades" model="ir.ui.view">
         <field name="name">view_tree_propiedades</field>
         <field name="model">bloquetas.propiedades</field>
         <field name="arch" type="xml">
@@ -20,46 +20,22 @@
       <field name="arch" type="xml"/>
           <form>
               <sheet>
-                  <group>
-                      <field name="nombre" string="Tu nombre"/>
-                      <field name="medidas" string="Tu medida"/>
-                      <field name="cantidad" string="Tu cantidad"/>
-                  </group>
-                  <group>
-                      <field name="presupuesto" string="Tu presupuesto"/>
-                      <field name="tipo" string="Tu tipo"/>
-                      <field name="fecha" string="Tu fecha"/>
-                  </group>
+                  <field name="nombre" string="Tu nombre"/>
+                  <field name="medidas" string="Tu medida"/>
+                  <field name="cantidad" string="Tu cantidad"/>
+                  <field name="presupuesto" string="Tu presupuesto"/>
+                  <field name="tipo" string="Tu tipo"/>
+                  <field name="fecha" string="Tu fecha"/>
               </sheet>
           </form>
     </record>
 
-
-    <!-- actions opening views on models -->
-
-    <record model="ir.actions.act_window" id="action_view_propiedades">
-        <field name="name">PROPIEDADES</field>
+    <record id="action_view_propiedades" model="ir.actions.act_window" >
+        <field name="name">propiedadees</field>
         <field name="res_model">bloquetas.propiedades</field>
         <field name="view_mode">tree,form</field>
     </record>
-
-
-    <!-- server action to the one above -->
-<!--
-    <record model="ir.actions.server" id="bloquetas.action_server">
-      <field name="name">bloquetas server</field>
-      <field name="model_id" ref="model_bloquetas_bloquetas"/>
-      <field name="state">code</field>
-      <field name="code">
-        action = {
-          "type": "ir.actions.act_window",
-          "view_mode": "tree,form",
-          "res_model": model._name,
-        }
-      </field>
-    </record>
--->
-
+    
     <!-- Top menu item -->
 
     <menuitem id="menu_propiedades" action="bloquetas.action_view_propiedades"/>
