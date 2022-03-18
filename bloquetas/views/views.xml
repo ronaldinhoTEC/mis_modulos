@@ -1,5 +1,4 @@
 <odoo>
-  <data>
     <!-- explicit list view definition -->
 
     <record model="ir.ui.view" id="view_tree_propiedades">
@@ -78,5 +77,4 @@
     <menuitem name="Server to list" id="bloquetas" parent="bloquetas.menu_2"
               action="bloquetas.action_server"/>
 -->
-  </data>
 </odoo>
