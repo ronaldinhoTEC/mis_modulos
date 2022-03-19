@@ -2,8 +2,8 @@
   
     <!-- explicit list view definition -->
 
-    <record model="ir.ui.view" id="escuela_estudiante.list">
-      <field name="name">escuela_estudiante list</field>
+    <record model="ir.ui.view" id="view_tree_escuela_estudiante">
+      <field name="name">view.tree.escuela_estudiante</field>
       <field name="model">escuela.estudiante</field>
       <field name="arch" type="xml">
         <tree>
@@ -14,6 +14,20 @@
     </record>
 
 
+    <record id="view_form_escuela_estudiante" model="ir.ui.view">
+        <field name="name">view.form.escuela_estudiante</field>
+        <field name="model">escuela.estudiante</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name" string="nombre "/>
+                        <field name="escuela_id" string="id escuela"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
     <!-- actions opening views on models -->
 
     <record model="ir.actions.act_window" id="action_view_escuela_estudiante">
