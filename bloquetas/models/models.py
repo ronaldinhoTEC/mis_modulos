@@ -13,7 +13,7 @@ class Propiedades(models.Model):
     tipo = fields.Selection([('casa', 'Casa'), ('edificio', 'Edificio')], string='Tipo de bloqueta')
     fecha = fields.Date()
     
-class Type(models.AbstractModel):
+class Type(models.Model):
     
     _name = 'bloquetas.propiedades.type'
     
