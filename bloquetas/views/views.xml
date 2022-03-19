@@ -15,18 +15,6 @@
       </tree>
     </field>
   </record>
-  
-  <!-- PESTAÑA DE PROPIEDADES -->
-  <record id="view_tree_clientes" model="ir.ui.view">
-    <field name="name">view_tree_clientes</field>
-    <field name="model">bloquetas.clientes</field>
-    <field name="arch" type="xml">
-      <tree>
-        <field name="codigo_postal"/>
-        <field name="fecha"/>
-      </tree>
-    </field>
-  </record>
 
   <record id="view_form_propiedades" model="ir.ui.view">
     <field name="name">view_form_propiedades</field>
@@ -56,7 +44,7 @@
   </record>
   <record id="action_view_clientes" model="ir.actions.act_window" >
     <field name="name">Informacion del cliente</field>
-    <field name="res_model">bloquetas.clientes</field>
+    <field name="res_model">bloquetas.propiedades</field>
     <field name="view_mode">tree,form</field>
   </record>
 
