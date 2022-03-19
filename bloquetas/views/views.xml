@@ -48,6 +48,19 @@
       </form>
     </field>
   </record>
+    <record id="view_form_clientes" model="ir.ui.view">
+    <field name="name">view_form_clientes</field>
+    <field name="model">bloquetas.clientes</field>
+    <field name="arch" type="xml">
+      <form>
+        <sheet>
+          <field name="nombre" string="Tu no"/>
+          <field name="apellido" string="Tu ap"/>
+          <field name="telefono" string="Tu fe"/>
+        </sheet>
+      </form>
+    </field>
+  </record>
 
   <record id="action_view_propiedades" model="ir.actions.act_window" >
     <field name="name">Propiedades del producto</field>
