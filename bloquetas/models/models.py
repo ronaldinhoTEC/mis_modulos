@@ -15,9 +15,12 @@ class Propiedades(models.Model):
     
 class Type(models.Model):
     
-    _name = 'bloquetas.propiedades.type'
+    _inherit = 'sale.order'
     
-    nombre = fields.Char("Nombrex", required=True) 
+    partner_id = fields.Many2one(
+        'bloquetas.propiedades',
+        string='partner',
+        )
 
 
 
