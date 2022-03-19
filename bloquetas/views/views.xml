@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
+  <!-- PESTAÑA DE PROPIEDADES -->
   <record id="view_tree_propiedades" model="ir.ui.view">
     <field name="name">view_tree_propiedades</field>
     <field name="model">bloquetas.propiedades</field>
@@ -11,6 +12,18 @@
         <field name="presupuesto"/>
         <field name="tipo"/>
         <field name="fecha"/>
+      </tree>
+    </field>
+  </record>
+  <!-- PESTAÑA DE CLIENTES -->
+  <record id="view_tree_clientes" model="ir.ui.view">
+    <field name="name">view_tree_clientes</field>
+    <field name="model">bloquetas.clientes</field>
+    <field name="arch" type="xml">
+      <tree>
+        <field name="nombre"/>
+        <field name="apellido"/>
+        <field name="telefono"/>
       </tree>
     </field>
   </record>
