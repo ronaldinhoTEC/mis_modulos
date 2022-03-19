@@ -15,16 +15,6 @@
       </tree>
     </field>
   </record>
-   <record id="view_tree_type" model="ir.ui.view">
-    <field name="name">view_tree_type</field>
-    <field name="model">bloquetas.type</field>
-    <field name="arch" type="xml">
-      <tree>
-        <field name="partner_id"/>
-      </tree>
-    </field>
-  </record>
-
 
   <record id="view_form_propiedades" model="ir.ui.view">
     <field name="name">view_form_propiedades</field>
