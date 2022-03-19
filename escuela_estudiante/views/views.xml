@@ -1,5 +1,5 @@
 <odoo>
-  <data>
+  
     <!-- explicit list view definition -->
 
     <record model="ir.ui.view" id="escuela_estudiante.list">
@@ -45,15 +45,14 @@
 
     <!-- menu categories -->
 
-    <menuitem name="Menu 1" id="escuela_estudiante.menu_1" parent="escuela_estudiante.menu_root"/>
-    <menuitem name="Menu 2" id="escuela_estudiante.menu_2" parent="escuela_estudiante.menu_root"/>
+    <!-- <menuitem name="Menu 1" id="escuela_estudiante.menu_1" parent="escuela_estudiante.menu_root"/>
+    <menuitem name="Menu 2" id="escuela_estudiante.menu_2" parent="escuela_estudiante.menu_root"/> -->
 
     <!-- actions -->
 
-    <menuitem name="List" id="escuela_estudiante.menu_1_list" parent="escuela_estudiante.menu_1"
+    <!-- <menuitem name="List" id="escuela_estudiante.menu_1_list" parent="escuela_estudiante.menu_1"
               action="escuela_estudiante.action_window"/>
     <menuitem name="Server to list" id="escuela_estudiante" parent="escuela_estudiante.menu_2"
-              action="escuela_estudiante.action_server"/>
+              action="escuela_estudiante.action_server"/> -->
 
-  </data>
 </odoo>
