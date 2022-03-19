@@ -1,17 +1,16 @@
 # -*- coding: utf-8 -*-
 
-# from odoo import models, fields, api
+from odoo import models, fields
 
 
-# class escuela(models.Model):
-#     _name = 'escuela.escuela'
-#     _description = 'escuela.escuela'
+class EscuelaPerfil(models.Model):
+    _name = 'escuela.perfil'
+    _description = 'escuela.escuela'
 
-#     name = fields.Char()
-#     value = fields.Integer()
-#     value2 = fields.Float(compute="_value_pc", store=True)
-#     description = fields.Text()
-#
+    nombre = fields.Char()
+    email = fields.Char()
+    phone = fields.Integer()
+
 #     @api.depends('value')
 #     def _value_pc(self):
 #         for record in self:
