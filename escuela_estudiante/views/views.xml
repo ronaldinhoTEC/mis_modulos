@@ -25,7 +25,7 @@
 
     <!-- server action to the one above -->
 
-    <record model="ir.actions.server" id="escuela_estudiante.action_server">
+    <!-- <record model="ir.actions.server" id="escuela_estudiante.action_server">
       <field name="name">escuela_estudiante server</field>
       <field name="model_id" ref="model_escuela_estudiante_escuela_estudiante"/>
       <field name="state">code</field>
@@ -36,7 +36,7 @@
           "res_model": model._name,
         }
       </field>
-    </record>
+    </record> -->
 
 
     <!-- Top menu item -->
