@@ -13,17 +13,4 @@ class Propiedades(models.Model):
     tipo = fields.Selection([('casa', 'Casa'), ('edificio', 'Edificio')], string='Tipo de bloqueta')
     fecha = fields.Date()
     
-class Clientes(models.Model):
-    _name = 'bloquetas.clientes'
-
-    nombre = fields.Char("Nombre", required=True)
-    apellido = fields.Char("Apellido", required=True)
-    telefono = fields.Char("Telefono", required=True)
-    # email = fields.Char("Email", required=True)
-    # direccion = fields.Char("Direccion", required=True)
-    # ciudad = fields.Char("Ciudad", required=True)
-    # provincia = fields.Char("Provincia", required=True)
-    # pais = fields.Char("Pais", required=True)
-    # codigo_postal = fields.Char("Codigo Postal", required=True)
-    # fecha = fields.Date()
     
