@@ -13,4 +13,9 @@ class Propiedades(models.Model):
     tipo = fields.Selection([('casa', 'Casa'), ('edificio', 'Edificio')], string='Tipo de bloqueta')
     fecha = fields.Date()
     
+class Clientes(models.Model):
+    _name = 'bloquetas.clientes'
+
+    codigo_postal = fields.Char("Codigo Postal", required=True)
+    fecha = fields.Date()
     
