@@ -16,7 +16,7 @@
 
     <!-- actions opening views on models -->
 
-    <record model="ir.actions.act_window" id="escuela_estudiante.action_window">
+    <record model="ir.actions.act_window" id="action_view_escuela_estudiante">
       <field name="name">escuela_estudiante window</field>
       <field name="res_model">escuela.estudiante</field>
       <field name="view_mode">tree,form</field>
@@ -41,8 +41,12 @@
 
     <!-- Top menu item -->
 
-    <menuitem name="escuela_estudiante" id="escuela_estudiante.menu_root"/>
-
+    <!-- <menuitem name="escuela_estudiante" id="escuela_estudiante.menu_root" action="escuela_estudiante.action_window"/> -->
+  <menuitem id="propiedades_menu_root" name="Escuela alumnos">
+    <menuitem id="primer_nivel__escuela_alumnos" name="escuela alumnos">
+        <menuitem id="menu_escuela_alumnos" action="action_view_escuela_estudiante"/>
+    </menuitem>
+  </menuitem>
     <!-- menu categories -->
 
     <!-- <menuitem name="Menu 1" id="escuela_estudiante.menu_1" parent="escuela_estudiante.menu_root"/>
