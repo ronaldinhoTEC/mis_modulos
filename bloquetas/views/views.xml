@@ -15,6 +15,15 @@
       </tree>
     </field>
   </record>
+   <record id="view_tree_propiedades_type" model="ir.ui.view">
+    <field name="name">view_tree_propiedades_type</field>
+    <field name="model">bloquetas.propiedades.type</field>
+    <field name="arch" type="xml">
+      <tree>
+        <field name="nombre"/>
+      </tree>
+    </field>
+  </record>
 
   <record id="view_form_propiedades" model="ir.ui.view">
     <field name="name">view_form_propiedades</field>
@@ -36,15 +45,28 @@
       </form>
     </field>
   </record>
+  <record id="view_form_propiedades_type" model="ir.ui.view">
+    <field name="name">view_form_propiedades_type</field>
+    <field name="model">bloquetas.propiedades.type</field>
+    <field name="arch" type="xml">
+      <form>
+        <sheet>
+          <group name="grupo 1" string="grupo 11">
+            <field name="nombre" string="your nombre"/>
+          </group>
+        </sheet>
+      </form>
+    </field>
+  </record>
 
   <record id="action_view_propiedades" model="ir.actions.act_window" >
     <field name="name">Propiedades del producto</field>
     <field name="res_model">bloquetas.propiedades</field>
     <field name="view_mode">tree,form</field>
   </record>
-  <record id="action_view_clientes" model="ir.actions.act_window" >
-    <field name="name">Informacion del cliente</field>
-    <field name="res_model">bloquetas.propiedades</field>
+  <record id="action_view_type" model="ir.actions.act_window" >
+    <field name="name">Informacion del type</field>
+    <field name="res_model">bloquetas.propiedades.type</field>
     <field name="view_mode">tree,form</field>
   </record>
 
@@ -54,7 +76,7 @@
         <menuitem id="menu_propiedades" action="action_view_propiedades"/>
     </menuitem>
     <menuitem id="primer_nivel_clientes" name="Clientes">
-        <menuitem id="menu_clientes" action="action_view_clientes"/>
+        <menuitem id="menu_clientes" action="action_view_type"/>
     </menuitem>
   </menuitem>
 
