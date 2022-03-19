@@ -1,16 +1,13 @@
 # -*- coding: utf-8 -*-
 
-# from odoo import models, fields, api
+from odoo import models, fields, api
 
 
-# class escuela_estudiante(models.Model):
-#     _name = 'escuela_estudiante.escuela_estudiante'
-#     _description = 'escuela_estudiante.escuela_estudiante'
+class escuela_estudiante(models.Model):
+    _name = 'escuela.estudiante'
 
-#     name = fields.Char()
-#     value = fields.Integer()
-#     value2 = fields.Float(compute="_value_pc", store=True)
-#     description = fields.Text()
+    name = fields.Char()
+    escuela_id= fields.Many2one("escuela.perfil", string="Nombre de Escuela", required=True)
 #
 #     @api.depends('value')
 #     def _value_pc(self):
