@@ -42,5 +42,11 @@
     <field name="view_mode">tree,form</field>
   </record>
 
-  <menuitem id="menu_propiedades" parent="" action="bloquetas.action_view_propiedades"/>
+  <!-- <menuitem id="menu_propiedades" parent="" action="bloquetas.action_view_propiedades"/> -->
+  <menuitem id="test_menu_root" name="Test">
+    <menuitem id="test_first_level_menu" name="First Level">
+        <menuitem id="menu_propiedades" action="action_view_propiedades"/>
+    </menuitem>
+  </menuitem>
+
 </odoo>
