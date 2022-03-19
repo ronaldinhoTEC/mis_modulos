@@ -37,13 +37,13 @@
   </record>
 
   <record id="action_view_propiedades" model="ir.actions.act_window" >
-    <field name="name">Bloquetas-pro</field>
+    <field name="name">Propiedades de bloquetas</field>
     <field name="res_model">bloquetas.propiedades</field>
     <field name="view_mode">tree,form</field>
   </record>
 
   <!-- <menuitem id="menu_propiedades" parent="" action="bloquetas.action_view_propiedades"/> -->
-  <menuitem id="propiedades_menu_root" name="PROPIEDADES">
+  <menuitem id="propiedades_menu_root" name="Manejo de bloquetas">
     <menuitem id="primer_nivel_level_menu" name="Primer nivel">
         <menuitem id="menu_propiedades" action="action_view_propiedades"/>
     </menuitem>
