@@ -36,6 +36,7 @@
         </sheet>
       </form>
     </field>
+  </record>
 
   <record id="action_view_propiedades" model="ir.actions.act_window" >
     <field name="name">Propiedades del producto</field>
