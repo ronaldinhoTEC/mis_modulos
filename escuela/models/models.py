@@ -3,9 +3,8 @@
 from odoo import models, fields
 
 
-class EscuelaPerfil(models.Model):
-    _name = 'escuela.perfil'
-    _description = 'escuela.escuela'
+class Escuela_perfil(models.Model):
+    _name = 'school.perfil'
 
     nombre = fields.Char()
     email = fields.Char()
