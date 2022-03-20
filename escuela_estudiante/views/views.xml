@@ -2,11 +2,11 @@
 <odoo>
     <record id="view_tree_estudiante" model="ir.ui.view">
       <field name="name">view.tree.estudiante</field>
-      <field name="model">escuela.estudiante</field>
+      <field name="model">colegio.estudiante</field>
       <field name="arch" type="xml">
         <tree>
           <field name="name"/>
-          <field name="escuela_id"/>
+          <field name="colegio_id"/>
         </tree>
       </field>
     </record>
@@ -14,13 +14,13 @@
 
     <record id="view_form_estudiante" model="ir.ui.view">
         <field name="name">view.form.estudiante</field>
-        <field name="model">escuela.estudiante</field>
+        <field name="model">colegio.estudiante</field>
         <field name="arch" type="xml">
             <form>
                 <sheet>
                     <group>
                         <field name="name" string="nombre "/>
-                        <field name="escuela_id" string="id escuela"/>
+                        <field name="colegio_id" string="id colegio"/>
                     </group>
                 </sheet>
             </form>
@@ -29,8 +29,8 @@
     <!-- actions opening views on models -->
 
     <record id="action_view_estudiante" model="ir.actions.act_window">
-      <field name="name">escuela_estudiante window</field>
-      <field name="res_model">escuela.estudiante</field>
+      <field name="name">colegio estudiante</field>
+      <field name="res_model">colegio.estudiante</field>
       <field name="view_mode">tree,form</field>
     </record>
 
