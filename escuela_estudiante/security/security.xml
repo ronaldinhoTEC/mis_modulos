@@ -3,7 +3,7 @@
 
     <record id="model_access_estudiante" model="ir.model.access">
         <field name="name">model.access.estudiante</field>
-        <field name="model_id" ref="escuela_estudiante.model_escuela_estudiante" />
+        <field name="model_id" ref="escuela_estudiante.model_colegio_estudiante" />
         <field name="group_id" ref="base.group_system" />
         <field name="perm_read" eval="1" />
         <field name="perm_write" eval="1" />

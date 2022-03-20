@@ -4,10 +4,10 @@ from odoo import models, fields, api
 
 
 class Estudiante(models.Model):
-    _name = 'escuela.estudiante'
+    _name = 'colegio.estudiante'
 
     name = fields.Char()
-    escuela_id= fields.Many2one("escuela.perfil", string="Nombre de Escuela", required=True)
+    colegio_id= fields.Many2one("escuela.perfil", string="Nombre de Escuela", required=True)
 #
 #     @api.depends('value')
 #     def _value_pc(self):
