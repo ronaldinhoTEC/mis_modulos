@@ -51,8 +51,8 @@
 -->
     <!-- actions -->
 
-    <menuitem id="menu_school" parent=""
-              action="escuela.action_view_escuela_perfil"/>
+    <!-- <menuitem id="menu_school" parent=""
+              action="escuela.action_view_escuela_perfil"/> -->
 
   </data>
 </odoo>
