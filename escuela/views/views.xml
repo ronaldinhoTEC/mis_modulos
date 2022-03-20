@@ -4,7 +4,7 @@
 
     <record model="ir.ui.view" id="view_tree_escuela_perfil">
       <field name="name">view.tree.escuela_perfil</field>
-      <field name="model">school.perfil</field>
+      <field name="model">school.tperfil</field>
       <field name="arch" type="xml">
         <tree>
           <field name="nombre"/>
@@ -15,7 +15,7 @@
     </record>
     <record id="view_form_escuela_perfil" model="ir.ui.view">
         <field name="name">view.form.escuela_perfil</field>
-        <field name="model">school.perfil</field>
+        <field name="model">school.fperfil</field>
         <field name="arch" type="xml">
             <form>
                 <sheet>
@@ -37,18 +37,6 @@
       <field name="view_mode">tree,form</field>
     </record> -->
 
-
-    
-
-    <!-- Top menu item -->
-<!--
-    <menuitem name="escuela" id="escuela.menu_root"/>
--->
-    <!-- menu categories -->
-<!--
-    <menuitem name="Menu 1" id="escuela.menu_1" parent="escuela.menu_root"/>
-    <menuitem name="Menu 2" id="escuela.menu_2" parent="escuela.menu_root"/>
--->
     <!-- actions -->
 
     <!-- <menuitem id="menu_school" parent=""
