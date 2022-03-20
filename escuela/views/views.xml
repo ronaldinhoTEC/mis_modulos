@@ -31,11 +31,11 @@
 
     <!-- actions opening views on models -->
 
-    <record model="ir.actions.act_window" id="action_view_escuela_perfil">
+    <!-- <record model="ir.actions.act_window" id="action_view_escuela_perfil">
       <field name="name">Escuelaa</field>
       <field name="res_model">school.perfil</field>
       <field name="view_mode">tree,form</field>
-    </record>
+    </record> -->
 
 
     
