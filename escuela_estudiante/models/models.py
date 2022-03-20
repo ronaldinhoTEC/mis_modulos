@@ -3,7 +3,7 @@
 from odoo import models, fields, api
 
 
-class escuela_estudiante(models.Model):
+class Estudiante(models.Model):
     _name = 'escuela.estudiante'
 
     name = fields.Char()

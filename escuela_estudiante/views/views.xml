@@ -1,9 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <odoo>
-  
-    <!-- explicit list view definition -->
-
-    <record model="ir.ui.view" id="view_tree_escuela_estudiante">
-      <field name="name">view.tree.escuela_estudiante</field>
+    <record id="view_tree_estudiante" model="ir.ui.view">
+      <field name="name">view.tree.estudiante</field>
       <field name="model">escuela.estudiante</field>
       <field name="arch" type="xml">
         <tree>
@@ -14,8 +12,8 @@
     </record>
 
 
-    <record id="view_form_escuela_estudiante" model="ir.ui.view">
-        <field name="name">view.form.escuela_estudiante</field>
+    <record id="view_form_estudiante" model="ir.ui.view">
+        <field name="name">view.form.estudiante</field>
         <field name="model">escuela.estudiante</field>
         <field name="arch" type="xml">
             <form>
@@ -30,7 +28,7 @@
     </record>
     <!-- actions opening views on models -->
 
-    <record model="ir.actions.act_window" id="action_view_escuela_estudiante">
+    <record id="action_view_estudiante" model="ir.actions.act_window">
       <field name="name">escuela_estudiante window</field>
       <field name="res_model">escuela.estudiante</field>
       <field name="view_mode">tree,form</field>
@@ -55,12 +53,12 @@
 
     <!-- Top menu item -->
 
-    <!-- <menuitem name="escuela_estudiante" id="escuela_estudiante.menu_root" action="escuela_estudiante.action_window"/> -->
-  <menuitem id="propiedades_menu_root" name="Escuela alumnos">
+    <menuitem name="menu_estudiante" parent="" id="escuela_estudiante.menu_root" action="escuela_estudiante.action_view_estudiante"/>
+  <!-- <menuitem id="propiedades_menu_root" name="Escuela alumnos">
     <menuitem id="primer_nivel__escuela_alumnos" name="escuela alumnos">
         <menuitem id="menu_escuela_alumnos" action="action_view_escuela_estudiante"/>
     </menuitem>
-  </menuitem>
+  </menuitem> -->
     <!-- menu categories -->
 
     <!-- <menuitem name="Menu 1" id="escuela_estudiante.menu_1" parent="escuela_estudiante.menu_root"/>
