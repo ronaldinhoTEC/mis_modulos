@@ -19,7 +19,7 @@
             <form>
                 <sheet>
                     <group>
-                        <field name="name" string="nombre "/>
+                        <field name="name" string="nombre ronall "/>
                         <field name="colegio_id" string="id colegio"/>
                     </group>
                 </sheet>
