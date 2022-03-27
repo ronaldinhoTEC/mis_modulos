@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
-    <record id="model_access_escuela_estudiante" model="ir.model.access">
+    <record id="model_access_escuela_estudiantee" model="ir.model.access">
         <field name="name">model.access.escuela_estudiante</field>
         <field name="model_id" ref="escuela_estudiante.model_escuela_estudiante" />
         <field name="group_id" ref="base.group_system" />
