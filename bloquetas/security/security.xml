@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
-    <record id="model_access_escuela_estudiantee" model="ir.model.access">
-        <field name="name">model.access.escuela_estudiante</field>
-        <field name="model_id" ref="escuela_estudiante.model_escuela_estudiante" />
+    <record id="model_access_propiedades" model="ir.model.access">
+        <field name="name">model.access.propiedades</field>
+        <field name="model_id" ref="bloquetas.model_bloquetas_propiedades" />
         <field name="group_id" ref="base.group_system" />
         <field name="perm_read" eval="1" /> 
         <field name="perm_write" eval="1" />
