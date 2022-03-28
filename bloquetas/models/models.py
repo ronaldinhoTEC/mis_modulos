@@ -12,7 +12,7 @@ class Propiedades(models.Model):
     presupuesto = fields.Text("presupuesto:", required=True)
     tipo = fields.Selection([('casa', 'Casa'), ('edificio', 'Edificio')], string='Tipo de bloqueta')
     fecha = fields.Date()
-    age_range_id = fields.Many2one(
+    age_range = fields.Many2one(
         "res.partner.age.range",
         "Age Range",
         compute="_compute_age_range_id",
