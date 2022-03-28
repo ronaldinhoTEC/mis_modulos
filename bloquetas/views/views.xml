@@ -12,7 +12,7 @@
         <field name="presupuesto"/>
         <field name="tipo"/>
         <field name="fecha"/>
-        <field name="age_range"/>
+        <field name="age_range_id"/>
         
       </tree>
     </field>
@@ -33,7 +33,7 @@
             <field name="presupuesto" string="Tu presupuesto"/>
             <field name="tipo" string="Tu tipo"/>
             <field name="fecha" string="Tu fecha"/>
-            <field name="age_range" string="Rango de edad"/>
+            <field name="age_range_id" string="Rango de edad"/>
             
           </group>
         </sheet>
